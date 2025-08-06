@@ -1,7 +1,7 @@
 ### 🧪 Guia Técnico de Testes Funcionais — Side  
 ---
 
-## 🎯 Objetivo
+# 🎯 Objetivo
 
 Demonstrar abordagem prática e profissional para testes funcionais em um jogo mobile tipo puzzle com mecânicas match-3. Este guia simula o pensamento aplicado antes e durante a execução dos testes, respeitando as exigências da Side.
 

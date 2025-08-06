@@ -1,4 +1,4 @@
-### 🧪 Guia Técnico de Testes Funcionais — Side (Mobile Puzzle Game)  
+### 🧪 Guia Técnico de Testes Funcionais — Side  
 ---
 
 ## 🎯 Objetivo

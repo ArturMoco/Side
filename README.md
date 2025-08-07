@@ -1,7 +1,4 @@
 # 🧪 **Technical QA Guide — Side (Mobile Puzzle Game)**
-*Candidate: Artur Felipe Albuquerque Portela*
-*Position: Functionality QA Tester*
-*Location: Braga, Portugal — On-site | Available full-time*
 
 ---
 

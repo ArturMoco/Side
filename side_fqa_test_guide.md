@@ -144,8 +144,8 @@ Estou disponível para aplicar este raciocínio num ambiente real de testes no v
 
 ---
 
-**Artur Felipe Albuquerque Portela**
-QA Tester · Manual & Automation
-GitHub: github.com/ArturMoco
-LinkedIn: Artur Albuquerque
+**Artur Felipe Albuquerque Portela**  
+QA Tester · Manual & Automation  
+GitHub: github.com/ArturMoco  
+LinkedIn: Artur Albuquerque  
 Email: [arturengqa@gmail.com](mailto:arturengqa@gmail.com)

@@ -1,153 +1,157 @@
-# 🧪 Guia Técnico de Testes Funcionais — Side
----
-
-## 🎯 Objetivo
-
-Demonstrar abordagem prática e profissional para testes funcionais em um jogo mobile tipo puzzle com mecânicas match-3. Este guia simula o pensamento aplicado antes e durante a execução dos testes, respeitando as exigências da vaga da Side.
+# 🧪 **Technical QA Guide — Side (Mobile Puzzle Game)**
+*Candidate: Artur Felipe Albuquerque Portela*
+*Position: Functionality QA Tester*
+*Location: Braga, Portugal — On-site | Available full-time*
 
 ---
 
-## 📱 Plataformas Alvo
+## 🎯 Objective
 
-* Android (diversas versões e resoluções)
+This document outlines my practical and structured approach to functional QA for mobile puzzle games using match-3 mechanics. It reflects the mindset I apply when validating gameplay features, user experience, and platform stability, in line with Side’s expectations.
+
+---
+
+## 📱 Target Platforms
+
+* Android (various screen sizes and versions)
 * iOS (iPhone/iPad)
 * PC (Windows)
-* Consola (Nintendo Switch)
+* Console (Nintendo Switch)
 
 ---
 
-## 🔍 Tipos de Teste Aplicados
+## 🔍 Types of Tests Performed
 
-* Testes Funcionais
-* Testes de Compatibilidade entre dispositivos
-* Testes de Interface (UI)
-* Testes de Progressão e Save State
-* Testes de Performance Básica
-* Smoke Test e Sanity Test por build
-
----
-
-## 🧩 Funcionalidades Prioritárias para Validação
-
-* Mecânica de jogo match-3 (movimentos válidos, bloqueios, boosters)
-* Sistema de energia/vidas e monetização (compras in-app simuladas)
-* Animações e tempo de resposta entre ações
-* Save automático (nível, moedas, boosters)
-* Sistema de recompensas diárias e eventos temporários
-* Traduções corretas por idioma
-* Integridade de HUD (placar, moedas, corações, etc.)
-* Funcionalidade offline e reconexão à internet
-* Comportamento ao alternar entre apps (multitarefa)
+* Functional Testing
+* Cross-Platform Compatibility Testing
+* UI and Layout Validation
+* Save State and Progression Testing
+* Basic Performance and Responsiveness
+* Smoke and Sanity Testing per build
 
 ---
 
-## 🛠️ Ferramentas Sugeridas
+## 🧩 Key Functional Areas to Validate
 
-* **TestRail / Xray** — Documentação de testes
-* **Jira** — Gestão de bugs e tarefas
-* **Google Sheets / Excel** — Registo manual de progresso e evidências
-* **Charles Proxy / Postman** — Inspeção de chamadas de API (se aplicável)
-* **ADB / Xcode** — Logs e testes físicos
+* Core match-3 logic (valid moves, blockers, boosters)
+* Energy/lives and monetization system (simulated in-app purchases)
+* Animation flow and response time after actions
+* Autosave of player progress (levels, coins, boosters)
+* Daily rewards and limited-time events
+* Language localization and text accuracy
+* HUD consistency (score, coins, hearts, etc.)
+* Offline functionality and reconnection handling
+* App-switching behavior (multitasking)
 
 ---
 
-## 📋 Exemplo de Caso de Teste
+## 🛠️ Suggested Tools
 
-**Funcionalidade:** Mecânica de movimento (Match-3)
+* **TestRail / Xray** — Test documentation
+* **Jira** — Bug tracking and ticket management
+* **Google Sheets / Excel** — Manual evidence tracking
+* **Charles Proxy / Postman** — API inspection (if applicable)
+* **ADB / Xcode** — Physical device debugging and logs
 
-**Cenário:** Jogador realiza movimento válido que gera combinação
+---
 
-**Passos:**
+## 📋 Sample Test Case
 
-1. Iniciar o jogo até o primeiro nível disponível
-2. Realizar um movimento que alinha 3 peças iguais
-3. Observar comportamento de animação, score e atualização do tabuleiro
+**Functionality:** Match-3 movement mechanics
 
-**Resultado Esperado:**
+**Scenario:** Player performs a valid move that triggers a match
 
-* Peças são eliminadas
-* Animação ocorre sem travamentos
-* Score é incrementado corretamente
-* Novas peças descem corretamente
+**Steps:**
 
-**Ambiente:**
+1. Launch the game and start the first available level
+2. Make a move to align 3 identical tiles
+3. Observe animation, score update, and tile replacement
+
+**Expected Result:**
+
+* Tiles are cleared correctly
+* Smooth animations without freezing
+* Score is updated accurately
+* New tiles drop and fill correctly
+
+**Environment:**
 
 * Android 13, iPhone iOS 17, Switch Lite, Windows 11
 
 ---
 
-## 🔁 Testes Multiplataforma
+## 🔁 Cross-Platform Testing
 
-* Comparar tempos de carregamento entre dispositivos
-* Validar se layout responsivo mantém legibilidade
-* Verificar sincronia de progresso entre dispositivos (se for cross-save)
-* Garantir que o HUD não sobreponha conteúdo em telas pequenas
-
----
-
-## 📊 Relatórios e Evidências
-
-A qualidade da documentação e dos relatórios é um pilar essencial no meu processo de QA. Para cada build testada, mantenho evidência estruturada e legível com base nos seguintes formatos:
-
-* **Bug Reports (Jira)**: Capturas de tela, descrição clara do comportamento observado, passos para reprodução e ambiente afetado.
-* **Relatórios de Execução (Excel ou TestRail)**: Tabela com status de cada teste (Pass/Fail/Blocked), tempo de execução, comentários e links para evidências.
-* **Relatórios Visuais (PDF/Slides)**: Usados em checkpoints, com resumo dos principais bugs, áreas críticas, e sugestões de mitigação.
-* **Vídeos curtos de reprodução**: Para bugs intermitentes, uso gravação de tela para auxiliar devs e PMs a compreenderem o defeito.
-* **Comparativo por plataforma**: Resumo por dispositivo/sistema para destacar falhas específicas de compatibilidade.
-
-Relatórios são entregues no fim de cada ciclo com priorização por impacto, frequência e risco.
+* Compare loading times and responsiveness across devices
+* Ensure UI scales well on small and large screens
+* Validate progress sync between devices (if supported)
+* Confirm HUD does not overlap game content on limited screen space
 
 ---
 
-## 🧮 Classificação e Priorização de Bugs
+## 📊 Reports and Evidence
 
-Quando um bug é identificado, o processo que sigo envolve três passos essenciais:
+Report quality is critical in my QA workflow. For every tested build, I provide well-documented evidence in the following formats:
 
-1. **Reprodução controlada**: Confirmo se o defeito é consistente e determinístico, tentando reproduzi-lo em diferentes dispositivos ou fluxos.
+* **Bug Reports (Jira)**: Clear descriptions, reproduction steps, affected platforms, and media evidence.
+* **Execution Reports (Excel or TestRail)**: Status table (Pass/Fail/Blocked), duration, comments, links to evidence.
+* **Visual Reports (PDF/Slides)**: Shared during checkpoints, including critical bugs and mitigation suggestions.
+* **Short Video Captures**: For intermittent bugs or animation errors.
+* **Platform Comparison Summaries**: To highlight platform-specific issues.
 
-2. **Classificação por severidade**:
-
-   * **Alta**: Impede o progresso, quebra o jogo, afeta lógica ou dados.
-   * **Média**: Funcionalidade parcial ou erro visual que interfere na experiência.
-   * **Baixa**: Detalhes cosméticos, pequenos erros de texto, glitches não bloqueantes.
-
-3. **Priorização por impacto e urgência**:
-
-   * Considero o momento do ciclo de testes, frequência do bug, visibilidade para o jogador e risco de regressão.
-
-Esse processo ajuda a entregar relatórios claros e objetivos para a equipa de desenvolvimento e QA leads, com foco em resolver o que realmente afeta a experiência do utilizador e a qualidade final do produto.
-
-## ⚠️ Possíveis Riscos e Edge Cases
-
-* Softlock após movimento inválido
-* Perda de progresso ao fechar app abruptamente
-* Botões não responsivos em resoluções específicas
-* Evento recorrente não aparece após reconexão
-* UI corrompida após troca de idioma
+All reports follow a priority system based on impact, frequency, and user-facing relevance.
 
 ---
 
-## 🧠 Mentalidade de Teste
+## 🧮 Bug Classification and Prioritization
 
-* Explorar como jogador avançado que busca falhas e inconsistências
-* Observar animações quadro a quadro
-* Testar padrões fora do esperado: boosters combinados, vários níveis de obstáculos, etc.
-* Priorizar a experiência real do jogador, não apenas os requisitos técnicos
+When I encounter a bug, I apply the following 3-step logic:
+
+1. **Controlled Reproduction**: Confirm consistency of the issue across environments or scenarios.
+
+2. **Severity Classification**:
+
+   * **High**: Breaks gameplay or logic, blocks progression, corrupts data
+   * **Medium**: Partial functionality loss, misbehavior, or distracting visuals
+   * **Low**: Cosmetic, text errors, non-blocking glitches
+
+3. **Priority Assessment**:
+
+   * Based on project phase, visibility to players, frequency, and regression risk
+
+This method ensures that reports are relevant, actionable, and technically informative.
 
 ---
 
-## 📎 Conclusão
+## ⚠️ Known Risks and Edge Cases
 
-Este guia reflete minha abordagem prática e direta como QA funcional, voltado para jogos mobile com foco no jogador final. Não apenas aplico boas práticas de teste, mas também compreendo como cada detalhe — desde um botão mal posicionado até a falha num fluxo de recompensa — pode afetar a experiência e retenção do utilizador.
-
-O meu diferencial está na combinação entre raciocínio técnico, mentalidade exploratória e entrega bem documentada. Atuo com autonomia, proponho soluções e mantenho comunicação objetiva com equipas técnicas.
-
-Tenho total disponibilidade para integrar a equipa da Side presencialmente em Braga e contribuir com consistência, atenção ao detalhe e comprometimento com a qualidade final.
+* Softlock after invalid move
+* Lost progress after force-closing the app
+* Unresponsive buttons on specific resolutions
+* Missing events after reconnecting to the internet
+* Corrupted UI after switching language mid-session
 
 ---
 
-**Artur Felipe Albuquerque Portela**  
-QA Tester · Manual & Automation  
-GitHub: github.com/ArturMoco  
-LinkedIn: Artur Albuquerque  
+## 🧠 Testing Mindset
+
+* Test as an advanced player who seeks inconsistencies
+* Observe animations frame-by-frame for lags or visual breaks
+* Combine boosters or edge interactions to trigger unusual behavior
+* Focus on the real player experience, not only technical requirements
+
+---
+
+## 📎 Final Notes
+
+This guide reflects how I approach QA from a player-centric, detail-oriented perspective. I believe QA is not only about finding bugs, but ensuring that every interaction in the game feels smooth, fair, and immersive.
+
+What sets me apart is my ability to combine structured reporting with an exploratory mindset, adapting quickly to new tools and platforms. I’m ready to contribute to the QA team at Side with consistency, technical clarity, and commitment to delivering polished mobile experiences.
+
+---
+
+**Artur Felipe Albuquerque Portela**
+QA Tester · Manual & Automation
+GitHub: github.com/ArturMoco
+LinkedIn: Artur Albuquerque
 Email: [arturengqa@gmail.com](mailto:arturengqa@gmail.com)

@@ -138,9 +138,11 @@ Esse processo ajuda a entregar relatórios claros e objetivos para a equipa de d
 
 ## 📎 Conclusão
 
-Estou preparado para contribuir com uma abordagem centrada no detalhe, na experiência do utilizador e na estabilidade entre plataformas. Este guia é uma amostra direta da forma como penso e organizo meu trabalho como QA.
+Este guia reflete minha abordagem prática e direta como QA funcional, voltado para jogos mobile com foco no jogador final. Não apenas aplico boas práticas de teste, mas também compreendo como cada detalhe — desde um botão mal posicionado até a falha num fluxo de recompensa — pode afetar a experiência e retenção do utilizador.
 
-Estou disponível para aplicar este raciocínio num ambiente real de testes no vosso estúdio, com total dedicação.
+O meu diferencial está na combinação entre raciocínio técnico, mentalidade exploratória e entrega bem documentada. Atuo com autonomia, proponho soluções e mantenho comunicação objetiva com equipas técnicas.
+
+Tenho total disponibilidade para integrar a equipa da Side presencialmente em Braga e contribuir com consistência, atenção ao detalhe e comprometimento com a qualidade final.
 
 ---
 

@@ -147,8 +147,8 @@ What sets me apart is my ability to combine structured reporting with an explora
 
 ---
 
-**Artur Felipe Albuquerque Portela**
-QA Tester · Manual & Automation
-GitHub: github.com/ArturMoco
-LinkedIn: Artur Albuquerque
+**Artur Felipe Albuquerque Portela**  
+QA Tester · Manual & Automation  
+GitHub: github.com/ArturMoco  
+LinkedIn: Artur Albuquerque  
 Email: [arturengqa@gmail.com](mailto:arturengqa@gmail.com)
